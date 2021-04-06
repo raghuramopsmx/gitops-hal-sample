@@ -239,7 +239,7 @@ deploymentConfigurations:
       bucket: spinnaker
       rootFolder: front50
       pathStyleAccess: true
-      endpoint: http://gitops-test-spin-minio:9000
+      endpoint: http://ninja-raghu-minio:9000
       accessKeyId: spinnakeradmin
       secretAccessKey: spinnakeradmin
     oracle: {}
@@ -304,11 +304,11 @@ deploymentConfigurations:
     apiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: https://gitops-test-spin-gate.opsmx.com
+      overrideBaseUrl: https://gitops.gate.opsmx.com
     uiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: https://gitops-test-spin.opsmx.com
+      overrideBaseUrl: https://gitops.deck.opsmx.com
     authn:
       oauth2:
         enabled: false
@@ -320,7 +320,7 @@ deploymentConfigurations:
         userAttributeMapping: {}
       ldap:
         enabled: true
-        url: ldap://gitops-test-spin-openldap:389/dc=example,dc=org
+        url: ldap://ninja-raghu-openldap:389/dc=example,dc=org
         userDnPattern: cn={0}
       x509:
         enabled: false
