@@ -227,7 +227,7 @@ deploymentConfigurations:
       clouddriver:
         enabled: true
         disableClouddriverRoDeck: false
-      echo:SPINNAKER_NAMESPACE
+      echo:ninja-raghu
         enabled: true
   persistentStorage:
     persistentStoreType: s3
