@@ -113,7 +113,7 @@ deploymentConfigurations:
       enabled: false
     vault:
       enabled: false
-    location: gitops-test-spin
+    location: ninja-raghu
     customSizing:
       spin-front50:
         limits:
@@ -227,7 +227,7 @@ deploymentConfigurations:
       clouddriver:
         enabled: true
         disableClouddriverRoDeck: false
-      echo:
+      echo:SPINNAKER_NAMESPACE
         enabled: true
   persistentStorage:
     persistentStoreType: s3
