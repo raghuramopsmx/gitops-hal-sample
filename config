@@ -113,7 +113,7 @@ deploymentConfigurations:
       enabled: false
     vault:
       enabled: false
-    location: ninja-raghu
+    location: SPINNAKER_NAMESPACE
     customSizing:
       spin-front50:
         limits:
@@ -227,7 +227,7 @@ deploymentConfigurations:
       clouddriver:
         enabled: true
         disableClouddriverRoDeck: false
-      echo:ninja-raghu
+      echo:SPINNAKER_NAMESPACE
         enabled: true
   persistentStorage:
     persistentStoreType: s3
