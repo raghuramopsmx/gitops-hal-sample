@@ -1,2 +1,0 @@
-overrideBaseUrl: redis://:password@ninja-raghu-redis-master:6379
-skipLifeCycleManagement: true

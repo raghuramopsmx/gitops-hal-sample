@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    include: "git"
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/OpsMx/newdev-dyn-account.git
+          username: anooptejt
+          password: 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
+          basedir: "/tmp/config-repo"
+          refresh-rate: 10
+encrypt: "Q7udUkHPuA3VnNlOtksSgQ"

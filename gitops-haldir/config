@@ -1,7 +1,7 @@
 currentDeployment: default
 deploymentConfigurations:
 - name: default
-  version: 1.20.5
+  version: 1.24.2
   providers:
     appengine:
       enabled: false
@@ -113,7 +113,7 @@ deploymentConfigurations:
       enabled: false
     vault:
       enabled: false
-    location: SPINNAKER_NAMESPACE
+    location: ninja-raghu
     customSizing:
       spin-front50:
         limits:
@@ -227,7 +227,7 @@ deploymentConfigurations:
       clouddriver:
         enabled: true
         disableClouddriverRoDeck: false
-      echo:SPINNAKER_NAMESPACE
+      echo:
         enabled: true
   persistentStorage:
     persistentStoreType: s3
@@ -239,7 +239,7 @@ deploymentConfigurations:
       bucket: spinnaker
       rootFolder: front50
       pathStyleAccess: true
-      endpoint: http://ninja-raghu-minio:9000
+      endpoint: http://s3-test-minio:9000
       accessKeyId: spinnakeradmin
       secretAccessKey: spinnakeradmin
     oracle: {}
@@ -304,11 +304,11 @@ deploymentConfigurations:
     apiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: https://gitops.gate.opsmx.com
+      overrideBaseUrl: https://s3-test-spin-gate.opsmx.com
     uiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: https://gitops.deck.opsmx.com
+      overrideBaseUrl: https://s3-test-spin.opsmx.com
     authn:
       oauth2:
         enabled: false
@@ -320,7 +320,7 @@ deploymentConfigurations:
         userAttributeMapping: {}
       ldap:
         enabled: true
-        url: ldap://ninja-raghu-openldap:389/dc=example,dc=org
+        url: ldap://s3-test-openldap:389/dc=example,dc=org
         userDnPattern: cn={0}
       x509:
         enabled: false
